@@ -1,0 +1,10 @@
+Simulator : Vivado xsim 2024.2
+Command   : xvlog rtl/div_by_5.v tb/div_by_5_tb.v ; xelab div_by_5_tb ; xsim -R
+
+--------------------------------------------
+ Divide-by-5: input clock 10 ns, output period 50 ns
+ High time 20 ns, low time 30 ns (40% duty cycle)
+ Output periods observed: 4
+ RESULT: PASS (0 errors)
+--------------------------------------------
+$finish called at time : 200 ns : File "day02_clock_divider_div5/tb/div_by_5_tb.v" Line 76

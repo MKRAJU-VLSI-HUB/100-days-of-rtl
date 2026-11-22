@@ -1,0 +1,22 @@
+Day 1 and Day 2 of my 100 Days of RTL Design challenge are done.
+
+I've started a 100-day challenge to get my digital design basics properly in place. Every day I write one design in Verilog, build a testbench for it, and simulate it in Vivado before moving on.
+
+Day 01 - 4-bit Ripple Carry Adder
+I wrote a full adder first, then connected four of them so each carry feeds into the next stage. Since there are only 512 possible inputs, the testbench checks every one of them against a + b + cin. All 512 matched.
+Takeaway: the carry has to pass through every stage, so the delay grows as the adder gets wider. Now I understand why carry look-ahead adders are needed.
+
+Day 02 - Divide-by-5 Clock Divider
+This one uses a 3-bit counter that runs from 0 to 4. The output stays high for 2 cycles and low for 3, so a 100 MHz input gives a 20 MHz output with a 40% duty cycle. The testbench measures the output period (50 ns) and the high time (20 ns) on every cycle.
+Takeaway: with an odd divide ratio you can't get a 50% duty cycle from one clock edge alone. You need logic on both edges.
+
+Tools: Verilog, Xilinx Vivado 2024.2 (xsim)
+
+Code, testbenches and simulation logs are on GitHub:
+https://github.com/MKRAJU-VLSI-HUB/100-days-of-rtl
+
+I've attached a short PDF that explains both designs.
+
+Next up: carry look-ahead adder and a 50% duty cycle divide-by-5.
+
+#VLSI #RTLDesign #Verilog #DigitalDesign #FPGA #Vivado #100DaysOfRTL #ASIC #Semiconductors #LearningInPublic

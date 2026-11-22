@@ -1,0 +1,15 @@
+*.jou
+*.log
+!simulation/*.log
+!**/simulation/*.log
+*.pb
+*.wdb
+xsim.dir/
+.Xil/
+*.cache/
+*.hw/
+*.runs/
+*.sim/
+*.ip_user_files/
+*.xpr
+docs/*.html
