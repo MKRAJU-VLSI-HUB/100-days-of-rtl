@@ -1,0 +1,12 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/ring_counter.v tb/ring_counter_tb.v
+            xelab ring_counter_tb ; xsim -R
+
+ q = 0010
+ q = 0100
+ q = 1000
+ q = 0001
+ q = 0010
+Ring counter: 20 clocks, output stayed one-hot and repeated every 4 clocks
+RESULT: PASS (0 errors)
+$finish called at time : 206 ns : File "day043_ring_counter/tb/ring_counter_tb.v" Line 34

@@ -1,0 +1,7 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/mux_8to1.v tb/mux_8to1_tb.v
+            xelab mux_8to1_tb ; xsim -R
+
+8:1 mux: all 2048 combinations checked
+RESULT: PASS (0 errors)
+$finish called at time : 4096 ns : File "day013_mux_8to1/tb/mux_8to1_tb.v" Line 29

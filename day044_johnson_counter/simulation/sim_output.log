@@ -1,0 +1,15 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/johnson_counter.v tb/johnson_counter_tb.v
+            xelab johnson_counter_tb ; xsim -R
+
+ state 1: 0001
+ state 2: 0011
+ state 3: 0111
+ state 4: 1111
+ state 5: 1110
+ state 6: 1100
+ state 7: 1000
+ state 0: 0000
+Johnson counter: 8-state sequence repeated 3 times, one bit change per clock
+RESULT: PASS (0 errors)
+$finish called at time : 246 ns : File "day044_johnson_counter/tb/johnson_counter_tb.v" Line 39

@@ -1,0 +1,15 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/jk_flipflop.v tb/jk_flipflop_tb.v
+            xelab jk_flipflop_tb ; xsim -R
+
+ j=0 k=1 -> q=0
+ j=1 k=1 -> q=1
+ j=1 k=1 -> q=0
+ j=1 k=0 -> q=1
+ j=1 k=1 -> q=0
+ j=0 k=1 -> q=0
+ j=1 k=0 -> q=1
+ j=1 k=0 -> q=1
+JK flip-flop: 100 random j/k cycles compared with a model
+RESULT: PASS (0 errors)
+$finish called at time : 1016 ns : File "day033_jk_flip_flop/tb/jk_flipflop_tb.v" Line 43

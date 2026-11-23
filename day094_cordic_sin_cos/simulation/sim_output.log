@@ -1,0 +1,15 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/cordic.v tb/cordic_tb.v
+            xelab cordic_tb ; xsim -R
+
+ angle |   cos (CORDIC / exact)  |   sin (CORDIC / exact)
+  -90  |   0.00006 /  0.00006   |  -1.00000 / -1.00000
+  -60  |   0.50000 /  0.50002   |  -0.86603 / -0.86602
+  -30  |   0.86603 /  0.86605   |  -0.49994 / -0.49997
+    0  |   1.00000 /  1.00000   |   0.00000 /  0.00000
+   30  |   0.86609 /  0.86605   |   0.49994 /  0.49997
+   60  |   0.50000 /  0.50002   |   0.86603 /  0.86602
+   90  |   0.00006 /  0.00006   |   1.00000 /  1.00000
+CORDIC: 1000 random angles in [-pi/2, pi/2], worst error = 0.000075 (1.2 LSB)
+RESULT: PASS (0 errors)
+$finish called at time : 181260 ns : File "day094_cordic_sin_cos/tb/cordic_tb.v" Line 52

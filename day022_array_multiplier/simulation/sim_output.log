@@ -1,0 +1,8 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/array_multiplier.v tb/array_multiplier_tb.v
+            xelab array_multiplier_tb ; xsim -R
+
+Example: 15 x 15 = 225
+Array multiplier: all 256 products checked
+RESULT: PASS (0 errors)
+$finish called at time : 1285 ns : File "day022_array_multiplier/tb/array_multiplier_tb.v" Line 33

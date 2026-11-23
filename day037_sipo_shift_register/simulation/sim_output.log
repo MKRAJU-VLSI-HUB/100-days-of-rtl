@@ -1,0 +1,10 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/sipo.v tb/sipo_tb.v
+            xelab sipo_tb ; xsim -R
+
+ sent 24, received 24
+ sent 81, received 81
+ sent 09, received 09
+SIPO: 20 of 20 bytes received correctly
+RESULT: PASS (0 errors)
+$finish called at time : 1810 ns : File "day037_sipo_shift_register/tb/sipo_tb.v" Line 39

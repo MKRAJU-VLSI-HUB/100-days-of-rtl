@@ -1,0 +1,7 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/seq_det_1101.v tb/seq_det_1101_tb.v
+            xelab seq_det_1101_tb ; xsim -R
+
+1101 detector: 400 bits, Moore found 26, Mealy found 26 (Mealy is one clock earlier)
+RESULT: PASS (0 errors)
+$finish called at time : 4006 ns : File "day056_sequence_detector_1101_moore/tb/seq_det_1101_tb.v" Line 43

@@ -1,0 +1,9 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/uart_tx.v tb/uart_tx_tb.v
+            xelab uart_tx_tb ; xsim -R
+
+sent 0x55, line monitor decoded 0x55
+sent 0xa3, line monitor decoded 0xa3
+UART TX: 50 bytes at 16 clocks per bit, start/stop bits and LSB-first data checked
+RESULT: PASS (0 errors)
+$finish called at time : 80555 ns : File "day084_uart_transmitter/tb/uart_tx_tb.v" Line 56

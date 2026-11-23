@@ -1,0 +1,29 @@
+//==============================================================================
+// Project     : 100 Days of RTL Design - Day 100 / 100
+// Design      : Mini 8-bit CPU
+// File        : program.mem
+// Author      : M Kamaraju (MKRAJU-VLSI-HUB)
+// GitHub      : https://github.com/MKRAJU-VLSI-HUB
+// LinkedIn    : https://www.linkedin.com/in/magupallikamaraju/
+// Tool        : Xilinx Vivado 2024.2 (xsim)
+// Description : Single-cycle CPU with 14 instructions running a Fibonacci program
+// License     : MIT License - Copyright (c) 2026 M Kamaraju
+//==============================================================================
+
+// Demo program: first 10 Fibonacci numbers, then the sum 1 + 2 + ... + 10
+8200  // 00: LDI  r1, 0        a = 0
+8401  // 01: LDI  r2, 1        b = 1
+860A  // 02: LDI  r3, 10       count = 10
+C200  // 03: OUT  r1           loop: print a
+1850  // 04: ADD  r4, r1, r2   t = a + b
+1280  // 05: ADD  r1, r2, r0   a = b
+1500  // 06: ADD  r2, r4, r0   b = t
+96FF  // 07: ADDI r3, -1       count--
+A603  // 08: JNZ  r3, 03       repeat while count != 0
+8A00  // 09: LDI  r5, 0        sum = 0
+860A  // 0A: LDI  r3, 10       n = 10
+1B58  // 0B: ADD  r5, r5, r3   loop: sum += n
+96FF  // 0C: ADDI r3, -1       n--
+A60B  // 0D: JNZ  r3, 0B       repeat while n != 0
+CA00  // 0E: OUT  r5           print sum
+D000  // 0F: HALT

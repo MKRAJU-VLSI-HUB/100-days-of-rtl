@@ -1,0 +1,9 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/moving_average.v tb/moving_average_tb.v
+            xelab moving_average_tb ; xsim -R
+
+Step 0 -> 200, output: 25 50 75 100 125 150 175 200 200 200
+Noisy input (100 +/- 40): average sample-to-sample jump in 25, out 3
+Moving average: 710 samples checked against the full 8-sample sum
+RESULT: PASS (0 errors)
+$finish called at time : 7106 ns : File "day096_moving_average_filter/tb/moving_average_tb.v" Line 58

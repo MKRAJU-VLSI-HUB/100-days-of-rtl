@@ -1,0 +1,7 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/edge_detector.v tb/edge_detector_tb.v
+            xelab edge_detector_tb ; xsim -R
+
+Edge detector: 300 clocks, rising edges 30/30, falling edges 30/30 detected
+RESULT: PASS (0 errors)
+$finish called at time : 3005 ns : File "day052_edge_detector/tb/edge_detector_tb.v" Line 40

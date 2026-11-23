@@ -1,0 +1,8 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/parity_gen_check.v tb/parity_gen_check_tb.v
+            xelab parity_gen_check_tb ; xsim -R
+
+Parity: 256 words, clean channel + 8 single-bit flips + 1 double flip each
+Single-bit errors detected: 2048 / 2048 (double-bit errors pass undetected, as expected)
+RESULT: PASS (0 errors)
+$finish called at time : 2816 ns : File "day020_parity_generator_checker/tb/parity_gen_check_tb.v" Line 41

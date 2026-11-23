@@ -1,0 +1,39 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/sine_rom.v tb/sine_rom_tb.v
+            xelab sine_rom_tb ; xsim -R
+
+  0 128                 *               
+  1 153                 |  *            
+  2 177                 |     *         
+  3 199                 |       *       
+  4 218                 |          *    
+  5 234                 |            *  
+  6 245                 |             * 
+  7 253                 |              *
+  8 255                 |              *
+  9 253                 |              *
+ 10 245                 |             * 
+ 11 234                 |            *  
+ 12 218                 |          *    
+ 13 199                 |       *       
+ 14 177                 |     *         
+ 15 153                 |  *            
+ 16 128                 *               
+ 17 103             *   |               
+ 18  79          *      |               
+ 19  57        *        |               
+ 20  38     *           |               
+ 21  22   *             |               
+ 22  11  *              |               
+ 23   3 *               |               
+ 24   1 *               |               
+ 25   3 *               |               
+ 26  11  *              |               
+ 27  22   *             |               
+ 28  38     *           |               
+ 29  57        *        |               
+ 30  79          *      |               
+ 31 103             *   |               
+Sine ROM: 32 samples within 1 LSB of 128 + 127*sin(2*pi*n/32), built from a 9-entry quarter table
+RESULT: PASS (0 errors)
+$finish called at time : 326 ns : File "day064_sine_rom/tb/sine_rom_tb.v" Line 41

@@ -1,0 +1,15 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/mux_2to1.v tb/mux_2to1_tb.v
+            xelab mux_2to1_tb ; xsim -R
+
+ sel a b | dataflow gate behav
+  0  0 0 |    0      0     0
+  0  0 1 |    0      0     0
+  0  1 0 |    1      1     1
+  0  1 1 |    1      1     1
+  1  0 0 |    0      0     0
+  1  0 1 |    1      1     1
+  1  1 0 |    0      0     0
+  1  1 1 |    1      1     1
+RESULT: PASS - all three styles agree on all 8 inputs
+$finish called at time : 80 ns : File "day011_mux_2to1/tb/mux_2to1_tb.v" Line 31

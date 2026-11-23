@@ -1,0 +1,11 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/restoring_divider.v tb/restoring_divider_tb.v
+            xelab restoring_divider_tb ; xsim -R
+
+200 / 7  -> quotient 28, remainder 4
+255 / 1  -> quotient 255, remainder 0
+5 / 9    -> quotient 0, remainder 5
+42 / 0   -> divide-by-zero flag = 1
+Restoring divider: all 65536 dividend/divisor pairs checked
+RESULT: PASS (0 errors)
+$finish called at time : 6533440 ns : File "day072_restoring_divider/tb/restoring_divider_tb.v" Line 52

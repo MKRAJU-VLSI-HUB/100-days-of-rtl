@@ -1,0 +1,8 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/vending_machine.v tb/vending_machine_tb.v
+            xelab vending_machine_tb ; xsim -R
+
+Vending machine: 500 clocks of random coins (Rs 318 inserted)
+  products dispensed: 95, change returned: 32 times
+RESULT: PASS (0 errors)
+$finish called at time : 5005 ns : File "day058_vending_machine/tb/vending_machine_tb.v" Line 44

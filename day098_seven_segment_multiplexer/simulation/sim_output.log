@@ -1,0 +1,12 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/seg7_mux.v tb/seg7_mux_tb.v
+            xelab seg7_mux_tb ; xsim -R
+
+ value 0xbeef -> display [BEEF]
+ value 0x2026 -> display [2026]
+ value 0x00a7 -> display [  A7]
+ value 0x0005 -> display [   5]
+ value 0x0000 -> display [   0]
+7-segment multiplexer: 205 values, one digit lit at a time, leading zeros blanked
+RESULT: PASS (0 errors)
+$finish called at time : 65606 ns : File "day098_seven_segment_multiplexer/tb/seg7_mux_tb.v" Line 77

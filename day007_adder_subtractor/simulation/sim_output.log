@@ -1,0 +1,7 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/adder_subtractor.v tb/adder_subtractor_tb.v
+            xelab adder_subtractor_tb ; xsim -R
+
+Adder/subtractor: 512 vectors checked (add and subtract, signed overflow)
+RESULT: PASS (0 errors)
+$finish called at time : 2560 ns : File "day007_adder_subtractor/tb/adder_subtractor_tb.v" Line 39

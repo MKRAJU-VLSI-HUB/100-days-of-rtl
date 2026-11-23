@@ -1,0 +1,11 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/apb_slave.v tb/apb_slave_tb.v
+            xelab apb_slave_tb ; xsim -R
+
+write DATA = 0x12345678, read back 0x12345678 (read took 1 wait state)
+STATUS = 0xa5a50088
+write to read-only STATUS -> PSLVERR = 1
+read unmapped address 0x40 -> PSLVERR = 1
+APB slave: 300 random transfers, register model and write counter (162 writes) checked
+RESULT: PASS (0 errors)
+$finish called at time : 7556 ns : File "day089_apb_slave/tb/apb_slave_tb.v" Line 89

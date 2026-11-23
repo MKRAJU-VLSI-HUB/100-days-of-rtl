@@ -1,0 +1,9 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/barrel_shifter.v tb/barrel_shifter_tb.v
+            xelab barrel_shifter_tb ; xsim -R
+
+Example: rotate left 10010110 by 3 -> 10110100
+Example: arithmetic right 10000000 by 2 -> 11100000
+Barrel shifter: all 8192 combinations of data, amount and op checked
+RESULT: PASS (0 errors)
+$finish called at time : 8194 ns : File "day023_barrel_shifter/tb/barrel_shifter_tb.v" Line 41

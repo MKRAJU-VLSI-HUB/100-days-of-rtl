@@ -1,0 +1,8 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/popcount.v tb/popcount_tb.v
+            xelab popcount_tb ; xsim -R
+
+Example: 10110110 has 5 ones
+Population count: all 256 inputs checked
+RESULT: PASS (0 errors)
+$finish called at time : 1285 ns : File "day026_population_count/tb/popcount_tb.v" Line 31

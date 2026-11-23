@@ -1,0 +1,20 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/traffic_light.v tb/traffic_light_tb.v
+            xelab traffic_light_tb ; xsim -R
+
+No car on side road for 40 clocks: main road stayed GREEN
+ t=  0  main YELLOW  side RED     (previous phase 41 clocks)
+ t=  3  main RED     side GREEN   (previous phase 3 clocks)
+ t=  9  main RED     side YELLOW  (previous phase 6 clocks)
+ t= 12  main GREEN   side RED     (previous phase 3 clocks)
+ t= 22  main YELLOW  side RED     (previous phase 10 clocks)
+ t= 25  main RED     side GREEN   (previous phase 3 clocks)
+ t= 31  main RED     side YELLOW  (previous phase 6 clocks)
+ t= 34  main GREEN   side RED     (previous phase 3 clocks)
+ t= 44  main YELLOW  side RED     (previous phase 10 clocks)
+ t= 47  main RED     side GREEN   (previous phase 3 clocks)
+ t= 53  main RED     side YELLOW  (previous phase 6 clocks)
+ t= 56  main GREEN   side RED     (previous phase 3 clocks)
+Full light cycles completed with a car waiting: 3
+RESULT: PASS (0 errors, never green/yellow on both roads)
+$finish called at time : 1006 ns : File "day059_traffic_light_controller/tb/traffic_light_tb.v" Line 57

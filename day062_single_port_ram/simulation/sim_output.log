@@ -1,0 +1,7 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/ram.v tb/ram_tb.v
+            xelab ram_tb ; xsim -R
+
+Single-port RAM: 16 writes + 16 reads, then 200 random accesses, bus floats when idle
+RESULT: PASS (0 errors)
+$finish called at time : 3485 ns : File "day062_single_port_ram/tb/ram_tb.v" Line 59

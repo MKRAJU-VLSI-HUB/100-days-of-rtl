@@ -1,0 +1,19 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/mini_cpu.v tb/mini_cpu_tb.v
+            xelab mini_cpu_tb ; xsim -R
+
+Running program.mem on the mini CPU:
+  OUT[0] = 0   (Fibonacci)
+  OUT[1] = 1   (Fibonacci)
+  OUT[2] = 1   (Fibonacci)
+  OUT[3] = 2   (Fibonacci)
+  OUT[4] = 3   (Fibonacci)
+  OUT[5] = 5   (Fibonacci)
+  OUT[6] = 8   (Fibonacci)
+  OUT[7] = 13   (Fibonacci)
+  OUT[8] = 21   (Fibonacci)
+  OUT[9] = 34   (Fibonacci)
+  OUT[10] = 55  (sum 1..10)
+CPU halted at pc = 0x0f after 97 instructions
+RESULT: PASS (0 errors) - all 11 outputs correct
+$finish called at time : 1025 ns : File "day100_mini_cpu/tb/mini_cpu_tb.v" Line 49

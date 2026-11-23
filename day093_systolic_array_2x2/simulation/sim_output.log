@@ -1,0 +1,10 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/systolic_2x2.v tb/systolic_2x2_tb.v
+            xelab systolic_2x2_tb ; xsim -R
+
+[1 2; 3 4] x [5 6; 7 8] =
+  [19 22]
+  [43 50]
+2x2 systolic array: 300 matrix products checked (including all-255 worst case)
+RESULT: PASS (0 errors)
+$finish called at time : 15 us : File "day093_systolic_array_2x2/tb/systolic_2x2_tb.v" Line 69

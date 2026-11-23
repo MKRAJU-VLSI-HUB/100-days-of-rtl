@@ -1,0 +1,9 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/uart_loopback.v tb/uart_loopback_tb.v
+            xelab uart_loopback_tb ; xsim -R
+
+PC sent    : "Hello VLSI 2026!"
+Board echo : "hELLO vlsi 2026!"
+UART loopback: 16 characters through RX -> controller -> TX, case swapped
+RESULT: PASS (0 errors)
+$finish called at time : 49935 ns : File "day086_uart_loopback/tb/uart_loopback_tb.v" Line 64

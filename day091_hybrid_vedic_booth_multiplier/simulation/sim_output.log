@@ -1,0 +1,10 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/hybrid_multiplier.v tb/hybrid_multiplier_tb.v
+            xelab hybrid_multiplier_tb ; xsim -R
+
+auto mode: 25 x 12 = 300 via Vedic
+auto mode: -25 x 12 = -300 via Booth
+8-bit: all 65536 pairs x 3 modes checked (auto picked Vedic 16384 times, Booth 49152 times)
+16-bit: 20000 random pairs in auto mode checked, including -32768 x -32768
+RESULT: PASS (0 errors)
+$finish called at time : 216610 ns : File "day091_hybrid_vedic_booth_multiplier/tb/hybrid_multiplier_tb.v" Line 59

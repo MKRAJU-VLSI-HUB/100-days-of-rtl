@@ -1,0 +1,16 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/elevator.v tb/elevator_tb.v
+            xelab elevator_tb ; xsim -R
+
+Calls for floors 3 and 1 while at floor 0:
+  t=   75 ns  door opens at floor 1
+  t=  215 ns  door opens at floor 3
+Calls for floors 0 and 2 while at floor 3:
+  t=  505 ns  door opens at floor 2
+  t=  645 ns  door opens at floor 0
+  t=  885 ns  door opens at floor 0
+  t=  975 ns  door opens at floor 1
+Elevator: 53 door stops, every call served, longest wait 34 clocks
+  never moved with the door open, never skipped a floor
+RESULT: PASS (0 errors)
+$finish called at time : 8595 ns : File "day092_elevator_controller/tb/elevator_tb.v" Line 79

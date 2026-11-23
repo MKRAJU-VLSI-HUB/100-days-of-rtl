@@ -1,0 +1,9 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/bin2bcd.v tb/bin2bcd_tb.v
+            xelab bin2bcd_tb ; xsim -R
+
+Example: 173 -> BCD 173
+Example: 255 -> BCD 255
+Binary to BCD: all 256 values checked
+RESULT: PASS (0 errors)
+$finish called at time : 1290 ns : File "day027_binary_to_bcd/tb/bin2bcd_tb.v" Line 31

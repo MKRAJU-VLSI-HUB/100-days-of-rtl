@@ -1,0 +1,7 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/priority_encoder_8x3.v tb/priority_encoder_8x3_tb.v
+            xelab priority_encoder_8x3_tb ; xsim -R
+
+Priority encoder: all 256 input patterns checked
+RESULT: PASS (0 errors)
+$finish called at time : 1280 ns : File "day017_priority_encoder_8to3/tb/priority_encoder_8x3_tb.v" Line 37

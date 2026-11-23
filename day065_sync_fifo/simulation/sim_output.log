@@ -1,0 +1,9 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/fifo_16x8.v tb/fifo_16x8_tb.v
+            xelab fifo_16x8_tb ; xsim -R
+
+After 20 writes: count = 16, full = 1
+After 20 reads : count = 0, empty = 1
+Sync FIFO: 512 pushes, 511 pops, max fill 16 of 16, order and flags checked every clock
+RESULT: PASS (0 errors)
+$finish called at time : 10405 ns : File "day065_sync_fifo/tb/fifo_16x8_tb.v" Line 58

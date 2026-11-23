@@ -1,0 +1,9 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/hamming_secded.v tb/hamming_secded_tb.v
+            xelab hamming_secded_tb ; xsim -R
+
+Hamming SECDED: 16 data words
+  single-bit errors corrected : 112 cases
+  double-bit errors detected  : 336 cases
+RESULT: PASS (0 errors)
+$finish called at time : 960 ns : File "day029_hamming_secded/tb/hamming_secded_tb.v" Line 51

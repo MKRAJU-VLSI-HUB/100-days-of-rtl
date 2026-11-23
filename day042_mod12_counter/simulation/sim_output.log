@@ -1,0 +1,8 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/mod12_up_counter.v tb/mod12_up_counter_tb.v
+            xelab mod12_up_counter_tb ; xsim -R
+
+Mod-12 counter: 150 cycles, highest value seen = 11 (never reaches 12)
+Load of 9 accepted, illegal load of 14 forced to 0
+RESULT: PASS (0 errors)
+$finish called at time : 1506 ns : File "day042_mod12_counter/tb/mod12_up_counter_tb.v" Line 39

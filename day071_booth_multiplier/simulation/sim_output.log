@@ -1,0 +1,10 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/booth_multiplier.v tb/booth_multiplier_tb.v
+            xelab booth_multiplier_tb ; xsim -R
+
+-7 x 3 = -21
+-128 x -128 = 16384
+127 x -128 = -16256
+Booth multiplier: all 65536 signed 8-bit pairs checked
+RESULT: PASS (0 errors)
+$finish called at time : 6553900 ns : File "day071_booth_multiplier/tb/booth_multiplier_tb.v" Line 49

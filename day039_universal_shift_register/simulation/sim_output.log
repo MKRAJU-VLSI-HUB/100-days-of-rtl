@@ -1,0 +1,8 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/universal_shift_register.v tb/universal_shift_register_tb.v
+            xelab universal_shift_register_tb ; xsim -R
+
+Universal shift register: 300 random cycles
+  hold 91, shift right 68, shift left 71, load 70
+RESULT: PASS (0 errors)
+$finish called at time : 3016 ns : File "day039_universal_shift_register/tb/universal_shift_register_tb.v" Line 47

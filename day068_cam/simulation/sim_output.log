@@ -1,0 +1,10 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/cam.v tb/cam_tb.v
+            xelab cam_tb ; xsim -R
+
+search 0x43 -> hit=1 addr=3
+search 0x42 -> hit=1 addr=2, match lines 01000100 (two copies)
+search 0x99 -> hit=0 (not stored)
+CAM: 403 searches, 157 hits, all match lines checked against a model
+RESULT: PASS (0 errors)
+$finish called at time : 4085 ns : File "day068_cam/tb/cam_tb.v" Line 63

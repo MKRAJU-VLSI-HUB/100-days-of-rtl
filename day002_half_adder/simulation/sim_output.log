@@ -1,0 +1,11 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/half_adder.v tb/half_adder_tb.v
+            xelab half_adder_tb ; xsim -R
+
+ a b | carry sum
+ 0 0 |   0    0
+ 0 1 |   0    1
+ 1 0 |   0    1
+ 1 1 |   1    0
+RESULT: PASS - truth table matches a + b
+$finish called at time : 40 ns : File "day002_half_adder/tb/half_adder_tb.v" Line 29

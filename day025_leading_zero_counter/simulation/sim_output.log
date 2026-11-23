@@ -1,0 +1,8 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/leading_zero_counter.v tb/leading_zero_counter_tb.v
+            xelab leading_zero_counter_tb ; xsim -R
+
+Example: x = 0000000001000000 -> 9 leading zeros
+Leading zero counter: all 65536 inputs checked
+RESULT: PASS (0 errors)
+$finish called at time : 65537 ns : File "day025_leading_zero_counter/tb/leading_zero_counter_tb.v" Line 32

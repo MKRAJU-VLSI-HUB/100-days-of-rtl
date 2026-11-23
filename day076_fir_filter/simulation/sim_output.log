@@ -1,0 +1,10 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/fir4.v tb/fir4_tb.v
+            xelab fir4_tb ; xsim -R
+
+Impulse response (input 64 then zeros): 8 24 24 8 0 
+DC input 80 -> output 80 (unity gain)
+Nyquist-rate input +/-100 -> output amplitude 0 (filtered out)
+FIR: impulse, DC, high-frequency and 500 random samples checked against the equation
+RESULT: PASS (0 errors)
+$finish called at time : 5296 ns : File "day076_fir_filter/tb/fir4_tb.v" Line 57

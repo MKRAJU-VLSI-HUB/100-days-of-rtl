@@ -1,0 +1,8 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/keypad_scanner.v tb/keypad_scanner_tb.v
+            xelab keypad_scanner_tb ; xsim -R
+
+Typed all 16 keys with contact bounce, scanner reported: "123A456B789C*0#D"
+Key reports: 16 (one per press, glitch ignored)
+RESULT: PASS (0 errors)
+$finish called at time : 27451 ns : File "day097_keypad_scanner/tb/keypad_scanner_tb.v" Line 71

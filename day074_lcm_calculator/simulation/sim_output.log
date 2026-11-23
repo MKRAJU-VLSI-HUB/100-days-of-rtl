@@ -1,0 +1,10 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/lcm_calc.v tb/lcm_calc_tb.v
+            xelab lcm_calc_tb ; xsim -R
+
+lcm(4, 6)     = 12
+lcm(12, 18)   = 36
+lcm(255, 254) = 64770
+LCM: all pairs 1..63 plus 500 random 8-bit pairs checked
+RESULT: PASS (0 errors)
+$finish called at time : 1430270 ns : File "day074_lcm_calculator/tb/lcm_calc_tb.v" Line 59

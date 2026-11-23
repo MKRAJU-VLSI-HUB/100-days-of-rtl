@@ -1,0 +1,7 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/mux4_1.v tb/mux4_1_tb.v
+            xelab mux4_1_tb ; xsim -R
+
+4:1 mux: all 64 combinations of data and select checked
+RESULT: PASS (0 errors)
+$finish called at time : 320 ns : File "day012_mux_4to1/tb/mux4_1_tb.v" Line 29

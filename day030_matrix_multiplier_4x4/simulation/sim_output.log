@@ -1,0 +1,12 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/matrix_mult_4x4.v tb/matrix_mult_4x4_tb.v
+            xelab matrix_mult_4x4_tb ; xsim -R
+
+A (1..16) x Identity =
+        1      2      3      4
+        5      6      7      8
+        9     10     11     12
+       13     14     15     16
+Identity test + 200 random 4x4 products checked (3200 elements)
+RESULT: PASS (0 errors)
+$finish called at time : 1005 ns : File "day030_matrix_multiplier_4x4/tb/matrix_mult_4x4_tb.v" Line 57

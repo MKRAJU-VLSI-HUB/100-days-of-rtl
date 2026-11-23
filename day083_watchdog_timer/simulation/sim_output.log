@@ -1,0 +1,11 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/watchdog.v tb/watchdog_tb.v
+            xelab watchdog_tb ; xsim -R
+
+Not enabled: 300 clocks without kicks, resets = 0
+Kicked every 40 clocks for 400 clocks: resets = 0, warnings = 0
+Kicks stopped: warning after 50 clocks, reset after 100 clocks
+Reset pulse length: 4 clocks
+Watchdog cannot be turned off: resets so far = 3
+RESULT: PASS (0 errors)
+$finish called at time : 10115 ns : File "day083_watchdog_timer/tb/watchdog_tb.v" Line 60

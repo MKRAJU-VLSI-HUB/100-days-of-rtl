@@ -1,0 +1,15 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/decoder_2to4.v tb/decoder_2to4_tb.v
+            xelab decoder_2to4_tb ; xsim -R
+
+ en a  | y
+  0 00 | 0000
+  0 01 | 0000
+  0 10 | 0000
+  0 11 | 0000
+  1 00 | 0001
+  1 01 | 0010
+  1 10 | 0100
+  1 11 | 1000
+RESULT: PASS - one-hot outputs correct, all off when disabled
+$finish called at time : 80 ns : File "day015_decoder_2to4/tb/decoder_2to4_tb.v" Line 30

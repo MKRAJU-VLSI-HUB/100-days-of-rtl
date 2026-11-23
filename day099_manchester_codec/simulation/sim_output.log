@@ -1,0 +1,11 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/manchester.v tb/manchester_tb.v
+            xelab manchester_tb ; xsim -R
+
+0x00 sent, decoded 0x00 (all zeros still give a transition every bit)
+0xFF sent, decoded 0xff
+Line stuck high for one bit time -> code error flag = 1
+200 random bytes decoded correctly: 200
+Longest run without a transition: 8 clocks (one bit = 8 clocks)
+RESULT: PASS (0 errors)
+$finish called at time : 133986 ns : File "day099_manchester_codec/tb/manchester_tb.v" Line 67

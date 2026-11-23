@@ -1,0 +1,7 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/t_flipflop.v tb/t_flipflop_tb.v
+            xelab t_flipflop_tb ; xsim -R
+
+T flip-flop: toggles on every clock when t=1 (10/10), 100 random cycles checked
+RESULT: PASS (0 errors)
+$finish called at time : 1106 ns : File "day034_t_flip_flop/tb/t_flipflop_tb.v" Line 40

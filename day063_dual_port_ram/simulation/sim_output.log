@@ -1,0 +1,7 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/sync_dual_port_ram.v tb/sync_dual_port_ram_tb.v
+            xelab sync_dual_port_ram_tb ; xsim -R
+
+Dual-port RAM: 400 cycles of independent read/write traffic, 208 reads checked
+RESULT: PASS (0 errors)
+$finish called at time : 4175 ns : File "day063_dual_port_ram/tb/sync_dual_port_ram_tb.v" Line 52

@@ -1,0 +1,11 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/mbist_march.v tb/mbist_march_tb.v
+            xelab mbist_march_tb ; xsim -R
+
+Fault-free RAM : fail = 0  (March C- took 163 clocks)
+Stuck-at-0 at addr 4 bit 1 -> fail = 1, reported addr 4
+Stuck-at-1 at addr 9 bit 3 -> fail = 1, reported addr 9
+Stuck-at-0 at addr 13 bit 5 -> fail = 1, reported addr 13
+Injected stuck-at faults detected and located: 32 / 32
+RESULT: PASS (0 errors)
+$finish called at time : 53796 ns : File "day069_memory_bist/tb/mbist_march_tb.v" Line 59

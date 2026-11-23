@@ -1,0 +1,15 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/gray_counter.v tb/gray_counter_tb.v
+            xelab gray_counter_tb ; xsim -R
+
+ count  1 -> gray 0001
+ count  2 -> gray 0011
+ count  3 -> gray 0010
+ count  4 -> gray 0110
+ count  5 -> gray 0111
+ count  6 -> gray 0101
+ count  7 -> gray 0100
+ count  8 -> gray 1100
+Gray counter: 40 counts (including wrap 15 -> 0), one bit change every time
+RESULT: PASS (0 errors)
+$finish called at time : 406 ns : File "day047_gray_code_counter/tb/gray_counter_tb.v" Line 36

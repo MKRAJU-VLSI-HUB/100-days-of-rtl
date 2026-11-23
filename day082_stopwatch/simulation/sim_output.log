@@ -1,0 +1,11 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/stopwatch.v tb/stopwatch_tb.v
+            xelab stopwatch_tb ; xsim -R
+
+Ran for 12345 ticks -> display 2:3.45
+Stopped: time holds at 2:3.45
+Lap: display frozen at 2:4.45 while counting continues
+Lap released: live time 2:5.96
+Stopped and cleared: 0:0.0
+RESULT: PASS (0 errors)
+$finish called at time : 252500 ns : File "day082_stopwatch/tb/stopwatch_tb.v" Line 68

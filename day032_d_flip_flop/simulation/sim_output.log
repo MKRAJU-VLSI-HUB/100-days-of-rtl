@@ -1,0 +1,9 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/dff.v tb/dff_tb.v
+            xelab dff_tb ; xsim -R
+
+Reset asserted between edges: q_async = 0 (clears at once), q_sync = 1 (waits for clock)
+After next clock edge:          q_sync = 0
+D flip-flop: 50 random captures checked + async vs sync reset behaviour
+RESULT: PASS (0 errors)
+$finish called at time : 526 ns : File "day032_d_flip_flop/tb/dff_tb.v" Line 47

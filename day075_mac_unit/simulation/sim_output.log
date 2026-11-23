@@ -1,0 +1,9 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/mac_unit.v tb/mac_unit_tb.v
+            xelab mac_unit_tb ; xsim -R
+
+ dot product 0 = 131072
+ dot product 1 = 6463
+MAC unit: 200 signed 8-element dot products checked (worst case -128 x -128 x 8 included)
+RESULT: PASS (0 errors)
+$finish called at time : 20 us : File "day075_mac_unit/tb/mac_unit_tb.v" Line 50

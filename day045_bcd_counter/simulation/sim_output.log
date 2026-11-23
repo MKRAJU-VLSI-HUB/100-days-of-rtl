@@ -1,0 +1,10 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/bcd_counter.v tb/bcd_counter_tb.v
+            xelab bcd_counter_tb ; xsim -R
+
+ count = 99
+ count = 00
+ count = 01
+BCD counter: 250 counts, rolled over from 99 to 00 2 times
+RESULT: PASS (0 errors)
+$finish called at time : 2516 ns : File "day045_bcd_counter/tb/bcd_counter_tb.v" Line 35

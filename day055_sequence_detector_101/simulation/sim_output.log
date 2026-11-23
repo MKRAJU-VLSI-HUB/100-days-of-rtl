@@ -1,0 +1,7 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/seq_det.v tb/seq_det_tb.v
+            xelab seq_det_tb ; xsim -R
+
+101 detector: 300 bits (demo 1010110100101000 + random), 27 detections, overlap allowed
+RESULT: PASS (0 errors)
+$finish called at time : 3006 ns : File "day055_sequence_detector_101/tb/seq_det_tb.v" Line 41

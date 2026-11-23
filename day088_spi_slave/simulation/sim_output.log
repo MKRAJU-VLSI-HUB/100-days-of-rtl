@@ -1,0 +1,9 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/spi_slave.v tb/spi_slave_tb.v
+            xelab spi_slave_tb ; xsim -R
+
+write 0xC3 to reg 2, read back 0xc3
+write 0x5A to reg 0 -> reg0 output pins = 0x5a
+SPI slave: 110 register writes and 93 reads over SPI, all read data matched
+RESULT: PASS (0 errors)
+$finish called at time : 292440 ns : File "day088_spi_slave/tb/spi_slave_tb.v" Line 79

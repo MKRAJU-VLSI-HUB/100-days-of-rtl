@@ -1,0 +1,8 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/vedic_multiplier.v tb/vedic_multiplier_tb.v
+            xelab vedic_multiplier_tb ; xsim -R
+
+Example: 13 x 11 = 143
+Vedic multiplier: all 256 products checked
+RESULT: PASS (0 errors)
+$finish called at time : 1285 ns : File "day028_vedic_multiplier/tb/vedic_multiplier_tb.v" Line 32

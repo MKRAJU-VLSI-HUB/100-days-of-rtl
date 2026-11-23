@@ -1,0 +1,8 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/clock_divider.v tb/clock_divider_tb.v
+            xelab clock_divider_tb ; xsim -R
+
+Input clock 10 ns -> div2 period 20 ns, div4 period 40 ns, div8 period 80 ns
+div8 duty cycle: 50%
+RESULT: PASS (0 errors)
+$finish called at time : 412 ns : File "day048_clock_divider_pow2/tb/clock_divider_tb.v" Line 43

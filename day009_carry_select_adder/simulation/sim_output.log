@@ -1,0 +1,7 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/carry_select_adder.v tb/carry_select_adder_tb.v
+            xelab carry_select_adder_tb ; xsim -R
+
+Carry select adder: all 131072 input combinations checked
+RESULT: PASS (0 errors)
+$finish called at time : 131072 ns : File "day009_carry_select_adder/tb/carry_select_adder_tb.v" Line 31

@@ -1,0 +1,15 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/demux_1to4.v tb/demux_1to4_tb.v
+            xelab demux_1to4_tb ; xsim -R
+
+ din sel | y3 y2 y1 y0
+  0  00  |  0  0  0  0
+  0  01  |  0  0  0  0
+  0  10  |  0  0  0  0
+  0  11  |  0  0  0  0
+  1  00  |  0  0  0  1
+  1  01  |  0  0  1  0
+  1  10  |  0  1  0  0
+  1  11  |  1  0  0  0
+RESULT: PASS - all 8 combinations correct
+$finish called at time : 80 ns : File "day014_demux_1to4/tb/demux_1to4_tb.v" Line 30

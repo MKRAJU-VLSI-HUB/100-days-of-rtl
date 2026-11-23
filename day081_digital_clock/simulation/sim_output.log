@@ -1,0 +1,11 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/digital_clock.v tb/digital_clock_tb.v
+            xelab digital_clock_tb ; xsim -R
+
+Clock set to 23:58:00
+  after 120 s: 00:00:00
+  after 121 s: 00:00:01
+  after 150 s: 00:00:30
+Digital clock: 150 seconds across midnight, every second compared with a seconds counter
+RESULT: PASS (0 errors)
+$finish called at time : 6016 ns : File "day081_digital_clock/tb/digital_clock_tb.v" Line 47

@@ -1,0 +1,7 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/reg_file.v tb/reg_file_tb.v
+            xelab reg_file_tb ; xsim -R
+
+Register file: 500 random cycles, 2 reads + 1 write each, forwarding and r0 = 0 checked
+RESULT: PASS (0 errors)
+$finish called at time : 5016 ns : File "day061_register_file/tb/reg_file_tb.v" Line 49

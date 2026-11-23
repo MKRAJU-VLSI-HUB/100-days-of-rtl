@@ -1,0 +1,8 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/skid_buffer.v tb/skid_buffer_tb.v
+            xelab skid_buffer_tb ; xsim -R
+
+Skid buffer: 1830 words sent, 1829 received in order, 901 downstream stall cycles
+  without stalls it moved 190 words in 190 clocks (one per clock)
+RESULT: PASS (0 errors)
+$finish called at time : 30005 ns : File "day090_skid_buffer/tb/skid_buffer_tb.v" Line 47

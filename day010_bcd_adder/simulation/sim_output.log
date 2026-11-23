@@ -1,0 +1,8 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/bcd_adder.v tb/bcd_adder_tb.v
+            xelab bcd_adder_tb ; xsim -R
+
+Example: 7 + 8 + 1 -> carry 1, digit 6
+BCD adder: all 200 valid digit combinations checked
+RESULT: PASS (0 errors)
+$finish called at time : 1005 ns : File "day010_bcd_adder/tb/bcd_adder_tb.v" Line 38

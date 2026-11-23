@@ -1,0 +1,11 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/logic_gates.v tb/logic_gates_tb.v
+            xelab logic_gates_tb ; xsim -R
+
+ a b | AND OR NOT NAND NOR XOR XNOR
+ 0 0 |  0   0   1    1    1   0    1
+ 0 1 |  0   1   1    1    0   1    0
+ 1 0 |  0   1   0    1    0   1    0
+ 1 1 |  1   1   0    0    0   0    1
+RESULT: PASS - all 4 input combinations correct
+$finish called at time : 40 ns : File "day001_logic_gates/tb/logic_gates_tb.v" Line 32

@@ -1,0 +1,15 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/full_adder.v tb/full_adder_tb.v
+            xelab full_adder_tb ; xsim -R
+
+ a b cin | cout sum
+ 0 0  0  |  0    0
+ 0 0  1  |  0    1
+ 0 1  0  |  0    1
+ 0 1  1  |  1    0
+ 1 0  0  |  0    1
+ 1 0  1  |  1    0
+ 1 1  0  |  1    0
+ 1 1  1  |  1    1
+RESULT: PASS - all 8 combinations correct
+$finish called at time : 80 ns : File "day003_full_adder/tb/full_adder_tb.v" Line 29

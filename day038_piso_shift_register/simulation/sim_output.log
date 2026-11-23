@@ -1,0 +1,10 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/piso.v tb/piso_tb.v
+            xelab piso_tb ; xsim -R
+
+ loaded 24, shifted out 24
+ loaded 81, shifted out 81
+ loaded 09, shifted out 09
+PISO: 20 random bytes serialised MSB first
+RESULT: PASS (0 errors)
+$finish called at time : 2010 ns : File "day038_piso_shift_register/tb/piso_tb.v" Line 39

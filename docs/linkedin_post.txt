@@ -1,22 +1,28 @@
-Day 1 and Day 2 of my 100 Days of RTL Design challenge are done.
+100 Days of RTL Design: done. 100 Verilog designs, 100 passing testbenches.
 
-I've started a 100-day challenge to get my digital design basics properly in place. Every day I write one design in Verilog, build a testbench for it, and simulate it in Vivado before moving on.
+I started this challenge to get my digital design basics really solid. My rule was simple: a design only counts once a self-checking testbench says PASS in Vivado. No judging waveforms by eye.
 
-Day 01 - 4-bit Ripple Carry Adder
-I wrote a full adder first, then connected four of them so each carry feeds into the next stage. Since there are only 512 possible inputs, the testbench checks every one of them against a + b + cin. All 512 matched.
-Takeaway: the carry has to pass through every stage, so the delay grows as the adder gets wider. Now I understand why carry look-ahead adders are needed.
+How it went:
+- Days 1-30: gates, adders (ripple, carry look-ahead, carry select, BCD), muxes, decoders, a barrel shifter, an ALU, Vedic and array multipliers, Hamming error correction
+- Days 31-60: flip-flops, shift registers, counters, clock dividers (including a true 50% duty divide-by-3), debouncers, clock domain crossing, state machines like a vending machine and a traffic light
+- Days 61-80: register file, RAMs, sync and async FIFOs, a CAM, a March C- memory self-test, Booth multiplier, divider, square root, MAC, FIR, CRC-8, arbiters
+- Days 81-100: digital clock, stopwatch, watchdog, UART, SPI, APB, a skid buffer, an elevator controller, a systolic array, CORDIC, and an 8-bit CPU that runs a Fibonacci program as the finale
 
-Day 02 - Divide-by-5 Clock Divider
-This one uses a 3-bit counter that runs from 0 to 4. The output stays high for 2 cycles and low for 3, so a 100 MHz input gives a 20 MHz output with a 40% duty cycle. The testbench measures the output period (50 ns) and the high time (20 ns) on every cycle.
-Takeaway: with an odd divide ratio you can't get a 50% duty cycle from one clock edge alone. You need logic on both edges.
+Where the input space was small enough, I tested every input. All 65,536 signed pairs for the Booth multiplier, every dividend/divisor pair for the divider, all 65,536 inputs for the square root.
 
-Tools: Verilog, Xilinx Vivado 2024.2 (xsim)
+What surprised me most was going back to my older lab exercises with proper testbenches. They turned up real bugs: a FIFO that could only hold 15 of its 16 entries, an FSM that drove one signal from two always blocks, a register file that only cleared one register on reset, and an LCM block that could never be synthesised.
 
-Code, testbenches and simulation logs are on GitHub:
+A few Verilog lessons I won't forget:
+- Checking an output in the same time step its input changes gives you the old value
+- An assign that calls a function only wakes up when the function's arguments change
+- One unsigned operand inside ? : makes the whole expression unsigned
+- CORDIC accuracy went from about 9 LSB to about 1 LSB just by adding guard bits and rounding
+
+All the code, testbenches and simulation logs are on GitHub (MIT licensed):
 https://github.com/MKRAJU-VLSI-HUB/100-days-of-rtl
 
-I've attached a short PDF that explains both designs.
+The attached PDF has the full list of 100 designs and the highlights.
 
-Next up: carry look-ahead adder and a 50% duty cycle divide-by-5.
+Next: pipelining the CPU, synthesis and timing reports, and moving to SystemVerilog and UVM.
 
-#VLSI #RTLDesign #Verilog #DigitalDesign #FPGA #Vivado #100DaysOfRTL #ASIC #Semiconductors #LearningInPublic
+#VLSI #RTLDesign #Verilog #DigitalDesign #FPGA #Vivado #100DaysOfRTL #ASIC #Semiconductors #HardwareDesign #LearningInPublic

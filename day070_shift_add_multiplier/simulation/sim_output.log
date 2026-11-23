@@ -1,0 +1,10 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/shift_add_multiplier.v tb/shift_add_multiplier_tb.v
+            xelab shift_add_multiplier_tb ; xsim -R
+
+13 x 11 = 143  (9 clocks)
+255 x 255 = 65025
+0 x 200 = 0
+Shift-add multiplier: 1003 products checked, 8 clocks per multiply
+RESULT: PASS (0 errors)
+$finish called at time : 100300 ns : File "day070_shift_add_multiplier/tb/shift_add_multiplier_tb.v" Line 47

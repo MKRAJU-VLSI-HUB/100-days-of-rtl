@@ -1,0 +1,9 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/lifo_stack.v tb/lifo_stack_tb.v
+            xelab lifo_stack_tb ; xsim -R
+
+After pushing 1..10: depth = 8, full = 1, top = 8
+Popped order: 8 8 7 6 5 4 3 2 1
+LIFO: last in first out order, full/empty limits and 500 random operations checked
+RESULT: PASS (0 errors)
+$finish called at time : 5195 ns : File "day067_lifo_stack/tb/lifo_stack_tb.v" Line 55

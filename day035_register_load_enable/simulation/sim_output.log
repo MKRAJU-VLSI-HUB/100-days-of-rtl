@@ -1,0 +1,7 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/register_8bit.v tb/register_8bit_tb.v
+            xelab register_8bit_tb ; xsim -R
+
+8-bit register: 200 random cycles of load / clear / output enable
+RESULT: PASS (0 errors)
+$finish called at time : 2016 ns : File "day035_register_load_enable/tb/register_8bit_tb.v" Line 39

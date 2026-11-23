@@ -1,0 +1,9 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/crc8.v tb/crc8_tb.v
+            xelab crc8_tb ; xsim -R
+
+CRC-8 of "123456789" = 0xf4 (standard check value 0xF4)
+100 random frames: CRC matches software model, clean frames check to zero
+Single-bit errors detected: 100 / 100
+RESULT: PASS (0 errors)
+$finish called at time : 261080 ns : File "day077_crc8_generator/tb/crc8_tb.v" Line 82

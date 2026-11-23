@@ -1,0 +1,15 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/latches.v tb/latches_tb.v
+            xelab latches_tb ; xsim -R
+
+ok  : SR set = 1
+ok  : SR hold after set = 1
+ok  : SR reset = 0
+ok  : SR hold after reset = 0
+ok  : SR qn is complement = 1
+ok  : D latch transparent 1 = 1
+ok  : D latch transparent 0 = 0
+ok  : D latch holds when en=0 = 1
+ok  : D latch ignores d glitch = 1
+RESULT: PASS (0 errors)
+$finish called at time : 100 ns : File "day031_latches/tb/latches_tb.v" Line 48

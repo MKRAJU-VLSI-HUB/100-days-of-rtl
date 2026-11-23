@@ -1,0 +1,8 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/synchronizers.v tb/synchronizers_tb.v
+            xelab synchronizers_tb ; xsim -R
+
+2-flop sync: level change seen in the destination domain within 3 clocks
+Pulse sync : 50 pulses sent from 100 MHz, 50 received at ~68 MHz
+RESULT: PASS (0 errors)
+$finish called at time : 5000500 ps : File "day054_cdc_synchronizers/tb/synchronizers_tb.v" Line 49

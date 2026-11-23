@@ -1,0 +1,10 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/round_robin_arbiter.v tb/round_robin_arbiter_tb.v
+            xelab round_robin_arbiter_tb ; xsim -R
+
+All requesting, grant order: 0 1 2 3 0 1 2 3
+Round-robin arbiter: 1000 random cycles checked against a model
+  grants: req0 243, req1 229, req2 223, req3 246  (fair share)
+  longest time a held request waited: 3 cycles
+RESULT: PASS (0 errors)
+$finish called at time : 10086 ns : File "day080_round_robin_arbiter/tb/round_robin_arbiter_tb.v" Line 65

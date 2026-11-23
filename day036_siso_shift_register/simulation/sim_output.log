@@ -1,0 +1,7 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/siso_right_shift.v tb/siso_right_shift_tb.v
+            xelab siso_right_shift_tb ; xsim -R
+
+SISO: 100 random bits shifted, each one appears at the output after 4 clocks
+RESULT: PASS (0 errors)
+$finish called at time : 1016 ns : File "day036_siso_shift_register/tb/siso_right_shift_tb.v" Line 34

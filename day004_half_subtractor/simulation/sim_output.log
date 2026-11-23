@@ -1,0 +1,11 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/half_subtractor.v tb/half_subtractor_tb.v
+            xelab half_subtractor_tb ; xsim -R
+
+ a b | borrow diff
+ 0 0 |   0     0
+ 0 1 |   1     1
+ 1 0 |   0     1
+ 1 1 |   0     0
+RESULT: PASS - truth table matches a - b
+$finish called at time : 40 ns : File "day004_half_subtractor/tb/half_subtractor_tb.v" Line 30

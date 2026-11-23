@@ -1,0 +1,8 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/uart_rx.v tb/uart_rx_tb.v
+            xelab uart_rx_tb ; xsim -R
+
+UART RX: 60 frames sent (some with +/-3% baud error), 60 received correctly
+  glitch on idle line ignored, bad stop bit flagged as frame error: 1
+RESULT: PASS (0 errors)
+$finish called at time : 108366 ns : File "day085_uart_receiver/tb/uart_rx_tb.v" Line 65

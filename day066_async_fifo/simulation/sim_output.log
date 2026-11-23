@@ -1,0 +1,8 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/async_fifo.v tb/async_fifo_tb.v
+            xelab async_fifo_tb ; xsim -R
+
+Async FIFO: 2000 words written at 100 MHz, 2000 read at ~59 MHz
+  writer saw FULL 1593 times, reader saw EMPTY 8 times, data order checked
+RESULT: PASS (0 errors)
+$finish called at time : 42880500 ps : File "day066_async_fifo/tb/async_fifo_tb.v" Line 57

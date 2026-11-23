@@ -1,0 +1,8 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/priority_arbiter.v tb/priority_arbiter_tb.v
+            xelab priority_arbiter_tb ; xsim -R
+
+Fixed priority arbiter: 16 patterns + 500 random cycles
+  grants: req0 186, req1 142, req2 78, req3 68  (lower index wins more)
+RESULT: PASS (0 errors)
+$finish called at time : 5026 ns : File "day079_fixed_priority_arbiter/tb/priority_arbiter_tb.v" Line 52

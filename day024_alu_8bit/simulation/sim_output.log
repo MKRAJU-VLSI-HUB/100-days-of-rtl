@@ -1,0 +1,7 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/alu.v tb/alu_tb.v
+            xelab alu_tb ; xsim -R
+
+ALU: 32000 random checks over all 16 operations + tri-state check
+RESULT: PASS (0 errors)
+$finish called at time : 64002 ns : File "day024_alu_8bit/tb/alu_tb.v" Line 66

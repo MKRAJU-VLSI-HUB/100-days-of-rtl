@@ -1,0 +1,8 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/debouncer.v tb/debouncer_tb.v
+            xelab debouncer_tb ; xsim -R
+
+Debouncer: 2 bouncy presses (12 chatter edges each) + 1 short glitch
+  clean output changed 4 times, press pulses = 2
+RESULT: PASS (0 errors)
+$finish called at time : 3249 ns : File "day053_switch_debouncer/tb/debouncer_tb.v" Line 55

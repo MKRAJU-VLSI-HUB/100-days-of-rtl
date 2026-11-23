@@ -1,0 +1,7 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/up_counter.v tb/up_counter_tb.v
+            xelab up_counter_tb ; xsim -R
+
+Up counter: 100 cycles with enable pauses, 5 wrap-arounds seen
+RESULT: PASS (0 errors)
+$finish called at time : 1016 ns : File "day040_sync_up_counter/tb/up_counter_tb.v" Line 38

@@ -1,0 +1,11 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/gcd.v tb/gcd_tb.v
+            xelab gcd_tb ; xsim -R
+
+gcd(48, 18)  = 6  (7 clocks)
+gcd(255, 17) = 17
+gcd(97, 89)  = 1 (two primes)
+gcd(0, 12)   = 12
+GCD: 2004 pairs checked against Euclid, worst case 257 clocks
+RESULT: PASS (0 errors)
+$finish called at time : 455040 ns : File "day073_gcd_calculator/tb/gcd_tb.v" Line 56

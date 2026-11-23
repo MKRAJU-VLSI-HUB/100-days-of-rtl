@@ -1,0 +1,9 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/smartphone_charger_fsm.v tb/smartphone_charger_fsm_tb.v
+            xelab smartphone_charger_fsm_tb ; xsim -R
+
+Unplugged after 20 us: back to IDLE, safety mode = 0
+Charging time before safety cut-off: 60 us
+Safety mode held until reset
+RESULT: PASS (0 errors)
+$finish called at time : 107501 ns : File "day060_charger_controller_fsm/tb/smartphone_charger_fsm_tb.v" Line 56

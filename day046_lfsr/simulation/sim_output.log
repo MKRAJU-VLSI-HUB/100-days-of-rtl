@@ -1,0 +1,12 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/lfsr8.v tb/lfsr8_tb.v
+            xelab lfsr8_tb ; xsim -R
+
+ q = 4a
+ q = 95
+ q = 2a
+ q = 54
+ q = a9
+LFSR: period = 255, distinct states visited = 255
+RESULT: PASS - maximal length sequence
+$finish called at time : 3006 ns : File "day046_lfsr/tb/lfsr8_tb.v" Line 40

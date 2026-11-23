@@ -1,0 +1,13 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/binary_gray_converter.v tb/binary_gray_converter_tb.v
+            xelab binary_gray_converter_tb ; xsim -R
+
+ bin 00000000 -> gray 00000000
+ bin 00000001 -> gray 00000001
+ bin 00000010 -> gray 00000011
+ bin 00000011 -> gray 00000010
+ bin 00000100 -> gray 00000110
+ bin 00000101 -> gray 00000111
+Checked 256 values: round trip is exact and neighbouring Gray codes differ by one bit
+RESULT: PASS (0 errors)
+$finish called at time : 1280 ns : File "day019_binary_gray_converter/tb/binary_gray_converter_tb.v" Line 41

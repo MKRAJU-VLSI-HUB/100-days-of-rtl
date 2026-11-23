@@ -1,0 +1,12 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/q88_mult.v tb/q88_mult_tb.v
+            xelab q88_mult_tb ; xsim -R
+
+   1.5000 x   2.0000 =    3.0000            
+  -0.5000 x   3.0000 =   -1.5000            
+   0.2500 x   0.2500 =    0.0625            
+ 100.0000 x   2.0000 =  127.9961 (saturated)
+ -128.0000 x -128.0000 =  127.9961 (saturated)
+Q8.8 multiplier: 200000 random products checked, 95426 saturated correctly
+RESULT: PASS (0 errors)
+$finish called at time : 200005 ns : File "day095_fixed_point_multiplier/tb/q88_mult_tb.v" Line 49

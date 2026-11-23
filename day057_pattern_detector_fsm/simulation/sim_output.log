@@ -1,0 +1,7 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/pattern_detector_fsm.v tb/pattern_detector_fsm_tb.v
+            xelab pattern_detector_fsm_tb ; xsim -R
+
+Pattern 000111000: 2000 bits checked against a shift-register model, 47 detections
+RESULT: PASS (0 errors)
+$finish called at time : 20006 ns : File "day057_pattern_detector_fsm/tb/pattern_detector_fsm_tb.v" Line 43

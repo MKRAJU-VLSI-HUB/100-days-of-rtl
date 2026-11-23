@@ -1,0 +1,12 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/pwm.v tb/pwm_tb.v
+            xelab pwm_tb ; xsim -R
+
+ duty =   0 -> high for   0 of 256 clocks (0%)
+ duty =  32 -> high for  32 of 256 clocks (12%)
+ duty =  64 -> high for  64 of 256 clocks (25%)
+ duty = 128 -> high for 128 of 256 clocks (50%)
+ duty = 192 -> high for 192 of 256 clocks (75%)
+ duty = 255 -> high for 255 of 256 clocks (99%)
+RESULT: PASS (0 errors)
+$finish called at time : 30726 ns : File "day051_pwm_generator/tb/pwm_tb.v" Line 41

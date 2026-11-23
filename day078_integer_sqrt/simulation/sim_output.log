@@ -1,0 +1,10 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/isqrt.v tb/isqrt_tb.v
+            xelab isqrt_tb ; xsim -R
+
+sqrt(144)   = 12, remainder 0
+sqrt(200)   = 14, remainder 4
+sqrt(65535) = 255, remainder 510
+Integer square root: all 65536 inputs checked, 8 clocks each
+RESULT: PASS (0 errors)
+$finish called at time : 6553900 ns : File "day078_integer_sqrt/tb/isqrt_tb.v" Line 47

@@ -1,0 +1,7 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/up_down_counter.v tb/up_down_counter_tb.v
+            xelab up_down_counter_tb ; xsim -R
+
+Up/down counter: 40 up, 40 down, 120 random cycles with random loads
+RESULT: PASS (0 errors)
+$finish called at time : 2006 ns : File "day041_up_down_counter/tb/up_down_counter_tb.v" Line 38

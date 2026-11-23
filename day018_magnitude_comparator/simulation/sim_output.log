@@ -1,0 +1,7 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/magnitude_comparator.v tb/magnitude_comparator_tb.v
+            xelab magnitude_comparator_tb ; xsim -R
+
+Magnitude comparator: all 256 pairs checked
+RESULT: PASS (0 errors)
+$finish called at time : 1280 ns : File "day018_magnitude_comparator/tb/magnitude_comparator_tb.v" Line 28

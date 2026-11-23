@@ -1,0 +1,8 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/spi_master.v tb/spi_master_tb.v
+            xelab spi_master_tb ; xsim -R
+
+master sent 0xa5 -> slave got 0xa5 | slave sent 0x3c -> master got 0x3c (8 SCLK edges)
+SPI master: 100 full-duplex byte transfers in mode 0 checked against a slave model
+RESULT: PASS (0 errors)
+$finish called at time : 68005 ns : File "day087_spi_master/tb/spi_master_tb.v" Line 53

@@ -1,0 +1,15 @@
+Simulator : Vivado xsim 2024.2
+Commands  : xvlog rtl/full_subtractor.v tb/full_subtractor_tb.v
+            xelab full_subtractor_tb ; xsim -R
+
+ a b bin | bout diff
+ 0 0  0  |  0    0
+ 0 0  1  |  1    1
+ 0 1  0  |  1    1
+ 0 1  1  |  1    0
+ 1 0  0  |  0    1
+ 1 0  1  |  0    0
+ 1 1  0  |  0    0
+ 1 1  1  |  1    1
+RESULT: PASS - all 8 combinations correct
+$finish called at time : 80 ns : File "day005_full_subtractor/tb/full_subtractor_tb.v" Line 29
